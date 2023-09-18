@@ -278,73 +278,74 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 1.5rem;
 }
-.our-chef .item .image img{
-    width: 100%;
+.our-chef .item .image img {
+  width: 100%;
 }
 .our-chef .item {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
   overflow: hidden;
 }
-.our-chef .item::before{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    display: none;
-    top: 0 ; left: 0; right: 0 ; bottom: 0;
-    background:  rgba(0, 0, 0, .5);
-    z-index: 5;
+.our-chef .item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
-.our-chef .item:hover.item:before{
-    display: block;
+.our-chef .item:hover.item:before {
+  display: block;
 }
-.our-chef .chef-info{
-    position: obsolute;
-    top: 130%;
-    left: 0;right: 0; bottom: 0; 
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-    align-items: center;
-    transition: 1s;
-    cursor: pointer;
+.our-chef .chef-info {
+  position: obsolute;
+  top: 130%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
 }
-.our-chef .item .chef-info h3{
-    font-size: 1.7rem;
-    color: #fff;
-    padding: .8rem 0;
-    text-transform: uppercase;
+.our-chef .item .chef-info h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 0.8rem 0;
+  text-transform: uppercase;
 }
 .our-chef .item .chef-info span {
-    font-size: 1.7rem;
-    color: var(--light-color);
-    letter-spacing: 1px;
-    font-weight: 300;
-
+  font-size: 1.7rem;
+  color: var(--light-color);
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 .our-chef .item .chef-info ul {
-    list-style: none;
-    display: flex;
-    grid-gap: 2rem;
-    padding: 3rem 0;
-
+  list-style: none;
+  display: flex;
+  grid-gap: 2rem;
+  padding: 3rem 0;
 }
 .our-chef .item .chef-info ul li a {
-    color: #b9b6b6;
-    font-size: 1.8rem;
-
+  color: #b9b6b6;
+  font-size: 1.8rem;
 }
 
-.our-chef .item:hover .chef-info{
-    top: 0;
+.our-chef .item:hover .chef-info {
+  top: 0;
 }
 /* OUR-CHEF STYLE END HERE */
 
-
 /* RESERVATION STYLE START HERE */
 
-.reservation{
+.reservation {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -352,7 +353,7 @@ section {
   /* align-items: center; */
   gap: 2rem;
 }
-.reservation .image{
+.reservation .image {
   width: 100%;
   background: url(./image/book-a-table.jpg);
   background-size: cover;
@@ -360,25 +361,25 @@ section {
   background-position: center center;
   padding-top: 50rem;
 }
-.reservation .heading{
+.reservation .heading {
   color: var(--light-color);
   font-size: 5rem;
   background-color: var(--black);
   /* border-radius: 10%; */
   width: 100%;
 }
-.reservation .sub-heading{
-text-align: center;
-color: var(--light-color);
-font-size: 2.5rem;
-/* padding: 0.5rem 2rem; */
-font-weight: 300;
-margin: 4rem;
-background: var(--black);
-display: inline-block;
+.reservation .sub-heading {
+  text-align: center;
+  color: var(--light-color);
+  font-size: 2.5rem;
+  /* padding: 0.5rem 2rem; */
+  font-weight: 300;
+  margin: 4rem;
+  background: var(--black);
+  display: inline-block;
 }
 
-.reservation .form-holder{
+.reservation .form-holder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,44 +388,92 @@ display: inline-block;
   gap: 1rem;
 }
 
-
 /*footer*/
 .footer {
   width: 100%;
+  /* height: 35vh; */
   color: var(--light-color);
   background: var(--black);
-  /* display: flex;
-  /* flex-direction: column;
-  align-items: center;
-  align-content: baseline; */
-  /* justify-content: space-between;
-  align-items: center; */ */
-  /* gap: 4rem; */
-}
-.footer h3{
-  font-size: 3rem;
-}
-.footer .open{
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  justify-content: space-around;
-  align-items: center;
-  gap: 4rem;
+  padding: 3rem;
 }
 
-.footer .contact{
+.open {
+  /* margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem; */
   font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
-.footer .foll{
-  
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
-.footer .foll img{
+
+.footer h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  /* padding:0.5rem 1.5rem;
+  border: 2px solid var(--light-color);
+  border-radius: 2rem;
+  border: none;
+*/
+}
+.contact {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+ .foll img {
   width: 3rem;
   height: 3rem;
   background-color: #e5e5e5;
   border-radius: 50%;
+} 
+.imgcontainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width:500px) {
+  .footer{
+    background-color: var(--black);
+    padding: 1rem;
+  }
+  .open{
+    flex-direction: column;
+  }
+  .open h3{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .add{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .foll{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+.contact{
+  flex-direction: column;
+  align-items: center;
+}
+.imgcontainer{
+  flex-direction: column;
+  align-items: center;
+}
+.foll img{
+  height: 4rem;
+  width: 4rem;
+}
 }
 
 /* RESERVATION STYLE END HERE */
@@ -454,6 +503,9 @@ display: inline-block;
   header .logo img {
     height: 7rem;
   }
+  /* header .icon{
+    display: none;
+  } */
   header .icon #menu {
     display: inline-block;
   }
